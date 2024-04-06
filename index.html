@@ -1,0 +1,1463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Abroad | Overseas Education Consultant | GlocalEd</title>
+  <meta name="description"
+    content="Empowering Your Study Abroad Dream: We're Global Overseas Education Consultants. Apply Now!">
+  <link rel="icon" type="png" href="assets/images/icon.ico">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha384-GLhlTQ8iN17PdL7vHA+8V+XpzTCtxFAWj8aFdmMz9L+nc/rSd6Z2a4e2IqKMI1z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/hero-abs-1.png" media="min-width(768px)">
+  <link rel="preload" as="image" href="./assets/images/hero-abs-2.png" media="min-width(768px)">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- Meta Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '7259196777502691');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=7259196777502691&ev=PageView&noscript=1" /></noscript>
+  <!-- End Meta Pixel Code -->
+  <style>
+    @media (max-width: 768px) {
+      body section {
+        margin-bottom: 0 !important;
+        /* Set margin-bottom to 0 to remove the gap between sections */
+        padding-top: 7rem !important;
+        padding-bottom: 10rem !important;
+      }
+    }
+
+    #myModal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+      animation: scaleIn 1s ease-in-out;
+    }
+
+    .modal-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fefefe;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .close {
+      color: #0b0b0b;
+      float: right;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .instagram-link {
+      color: blue !important;
+      /* Change the color to blue */
+    }
+
+    @keyframes scaleUp {
+      from {
+        transform: translate(-50%, -50%) scale(0.1);
+      }
+
+      to {
+        transform: translate(-50%, -50%) scale(1);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    .modal-content img {
+      width: 45rem;
+      height: 45rem;
+      /* Make the image take 100% of the modal width */
+      /* Maintain the aspect ratio */
+    }
+
+    @media (max-width: 600px) {
+      .modal-content {
+        max-width: 90%;
+        text-align: center;
+      }
+
+      .modal-content img {
+        width: 300px;
+        height: 300px;
+        /* Make the image take 100% of the modal width */
+        /* Maintain the aspect ratio */
+      }
+    }
+
+    .header .container .company {
+      color: rgb(5, 145, 98);
+      font-size: 1rem;
+    }
+
+    #contactPopup .popup-content .details {
+      color: blue;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .contact-icons {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .contact-icons li {
+      margin: 0 15px;
+    }
+
+    .header .container .logo img {
+      height: 5rem;
+      width: 57rem;
+    }
+
+    .iconmn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo {
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #000;
+      /* Specify the color you want for the text */
+    }
+
+    .logo img {
+      margin-right: -307px;
+      /* Adjust the margin as needed */
+    }
+
+    .grid-list li h1 {
+      color: #000;
+      font-size: 2.3rem;
+    }
+
+    .whatsapp-icon {
+      position: fixed;
+      bottom: 75px;
+      /* Adjust the bottom distance as needed */
+      right: 30px;
+      /* Adjust the right distance as needed */
+      z-index: 1000;
+      cursor: pointer;
+      width: 50px;
+      /* Adjust the width as needed */
+      height: 50px;
+    }
+
+    .certification-section {
+      background-color: #f9f9f9;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .certification-content {
+      margin: 20px;
+      display: flex;
+      flex-direction: row;
+      /* Display children elements horizontally */
+      justify-content: center;
+      /* Center horizontally */
+      align-items: center;
+      /* Center vertically */
+    }
+
+    .certification-image {
+      max-width: 50px;
+      /* Adjust the size of the image */
+      height: 20px;
+      margin: 40px;
+      /* Add some spacing between image and text */
+    }
+
+    .certification-content img {
+      max-width: 500px;
+      /* Adjust the size of the image */
+      height: auto;
+    }
+
+    .certification-text {
+      text-align: left;
+      /* Align text to the left */
+    }
+
+    .certification-content h2 {
+      font-size: 28px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .certification-content p {
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 0;
+    }
+
+    /* Media query for screens with a maximum width of 767 pixels (mobile devices) */
+    @media only screen and (max-width: 767px) {
+      .certification-content {
+        flex-direction: column;
+        /* Display children elements vertically */
+        align-items: center;
+        /* Center both horizontally */
+      }
+
+      .certification-content img {
+        margin-right: 0;
+        width: 300px !important;
+        /* Remove margin to center image */
+      }
+    }
+    @media only screen and (max-width: 767px){
+        .w-100{
+          display: none;
+        }
+
+    };
+      
+    
+
+    .c .links {
+      color: rgb(5, 5, 179);
+    }
+    /* Styling for the form */
+/* Styling for the form */
+#formSection {
+  width: 50%;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    min-width: 50%;
+    max-width: 80%;
+    max-height: 80vh; /* Set maximum height */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+#formSection form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#formSection form label {
+    display: block;
+    /* margin-bottom: 10px; */
+    font-weight: bold;
+}
+
+#formSection form input[type="text"],
+#formSection form input[type="email"],
+#formSection form select {
+    width: 100%;
+    padding: 10px;
+    /* margin-bottom: 20px; */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#formSection form select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /* background-image: url('data:image/svg+xml;utf8,<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>'); */
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: center;
+}
+
+#formSection form input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#formSection form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+@media only screen and (max-width: 767px){
+        #formSection{
+          width: 80%;
+        }
+
+    };
+      
+
+/* Add this CSS to position the "Get Started" button */
+.instagram-link {
+    display: inline-block;
+}
+
+.instagram-link button {
+    margin-left: 10px;
+}
+.get-started-btn button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline;
+    
+}
+
+.get-started-btn button:hover {
+    background-color: #0056b3;
+}
+
+  </style>
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+  <!-- <div id="myModal">
+    <div class="modal-content">
+      <div>
+        <span class="close" onclick="closeModal()">&times;</span>
+      </div>
+      <img src="assets/images/modal.jpg" alt="pop">
+      <h2>Check out our Instagram!</h2>
+      <p>Follow us on Instagram: <a href="https://www.instagram.com/glocaled/" target="_blank"
+          class="instagram-link">@glocaled</a></p>
+    </div>
+  </div> -->
+  <div id="myModal">
+    <div class="modal-content">
+        <div>
+            <span class="close" onclick="closeModal()">&times;</span>
+        </div>
+        <img src="assets/images/modal.jpg" alt="pop">
+        <h2>Check out our Instagram!</h2>
+        <p>Follow us on Instagram: 
+            <a href="https://www.instagram.com/glocaled/" target="_blank" class="instagram-link">
+                <i class="fab fa-instagram"></i>glocalEd
+            </a>
+            <div class="get-started-btn">
+            <span><button onclick="showForm()">Book Your Free Consultation!!!</button></span>
+          </div>
+        </p>
+    </div>
+    
+</div>
+<div id="formSection" style="display:none;">
+  <h2>Book your Slot now!!!</h2> 
+  <form id="signupForm">
+      <!-- <span class="close" onclick="closeForm()">&times;</span> -->
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" required><br><br>
+      
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" required><br><br>
+      
+      <label for="mobileNumber">Mobile Number:</label>
+      <input type="text" id="mobileNumber" name="mobileNumber" required><br><br>
+      
+      <label for="email">Email ID:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      
+      <label for="country">Country:</label>
+      <select id="country" name="country">
+          <option value="UK">UK</option>
+          <option value="Ireland">Ireland</option>
+          <option value="Australia">Australia</option>
+          <option value="USA">USA</option>
+          <option value="NewZealand">NewZealand</option>
+          <option value="Canada">Canada</option>
+          <option value="Europe">Europe</option>
+          <option value="Singapore">Singapore</option>
+          <option value="Asia">Asia</option>
+          <!-- Add more options as needed -->
+      </select><br><br>
+      
+      <input type="submit" value="Submit">
+  </form>
+</div>
+
+
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <!-- <h1> -->
+        <div class="iconmn">
+          <a href="#" class="logo company"><img src="assets/images/Main.png" alt=""></a>
+        </div>
+      <!-- </h1> -->
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <!-- <a href="#" class="logo">GlocalEd</a> -->
+          <a href="#" class="logo company"><img src="assets/images/Main.png" alt=""></a>
+          <button class="nav-close-btn" aria-label="Close menu" data-nav-toggler>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-toggler>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#demo" class="navbar-link" data-nav-toggler>Demo</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#countries" class="navbar-link" data-nav-toggler>Countries</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#certification" class="navbar-link" data-nav-toggler>Certification</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link" data-nav-toggler>About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#courses" class="navbar-link" data-nav-toggler>Why us?</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#cofounder" class="navbar-link" data-nav-toggler>Co founders</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#testimonial" class="navbar-link" data-nav-toggler>Testimonial</a>
+          </li>
+
+
+
+        </ul>
+
+      </nav>
+
+      <div class="header-actions">
+        <a href="#" class="header-action-btn login-btn" id="contactBtn">
+          <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+          <span class="span">Contact</span>
+        </a>
+        <button class="header-action-btn nav-open-btn" aria-label="Open menu" data-nav-toggler>
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+      </div>
+
+      <div id="contactPopup" class="popup">
+        <div class="popup-content">
+          <h2>Contact Information</h2>
+          <ul>
+            <li>
+              <ion-icon name="call-outline" class="contact-icon"></ion-icon>
+              Phone: <a href="tel:+918867760146" class="details">+91 8867760146</a>
+            </li>
+            <li>
+              <ion-icon name="mail-outline" class="contact-icon"></ion-icon>
+              Email: <a href="mailto:glocaled2327@gmail.com" class="details">edglocal2327@gmail.com</a>
+            </li>
+            <li>
+              <ion-icon name="logo-instagram" class="contact-icon"></ion-icon>
+              Instagram: <a href="https://www.instagram.com/glocaled" target="_blank" class="details">@glocaled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+  </div>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero sec" id="home" aria-label="hero"
+        style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="section-subtitle">Study Abroad Experts</p>
+
+            <h2 class="h2 hero-title">Unlock Your Future: Study Overseas with Expert Guidance
+            </h2>
+
+            <p class="hero-text">
+              Embark on a transformative journey with our premier consultancy specializing in international education.
+              Discover boundless opportunities at renowned global universities. Let our seasoned experts tailor a
+              personalized roadmap to your academic success. Start your adventure today!
+            </p>
+            <div class="get-started-btn">
+              <span><button onclick="showForm()">Book Your Free Consultation!!!</button></span>
+            </div>
+
+          </div>
+
+          <figure class="hero-banner">
+
+            <img src="assets/images/logo.png" width="500" height="500" loading="lazy" alt="hero image" class="w-100">
+
+            <img src="assets/images/close-up-hands-holding-diplomas-caps_23-2148950575.jpg" width="250" height="300"
+              aria-hidden="true" class="abs-img abs-img-1">
+
+            <img src="assets/images/bg.png" width="160" height="160" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-2">
+
+          </figure>
+
+        </div>
+      </section>
+      <section id="demo" class="sec section cta" aria-label="workshop"
+        style="background-image: url('./assets/images/cta-bg.png')">
+        <div class="container">
+
+          <figure class="cta-banner">
+            <img src="./assets/images/cta-banner.jpg" width="580" height="380" loading="lazy" alt="cta banner"
+              class="img-cover">
+          </figure>
+
+          <div class="cta-content">
+
+            <p class="section-subtitle">Get Started with Your Free Consultation</p>
+
+            <h2 class="h2 section-title">Unlock Financial Clarity in 45 Minutes</h2>
+
+            <p class="section-text">
+              "Take control of your financial future with our complimentary consultation service. Our seasoned advisors
+              are dedicated to understanding your financial objectives, addressing your concerns, and providing tailored
+              guidance. Begin your journey towards financial security today – schedule your free consultation now and
+              let us pave the way to financial success."
+            </p>
+
+            <!-- <a href="https://docs.google.com/forms/d/e/1FAIpQLSe0hAXxEcT5zNTXA4m04PADkPgi4P1stovnZucoqTBe-AKddw/viewform"
+              class="btn btn-secondary">
+              <span class="span">Book Your Free Consultation Now!</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a> -->
+            <div class="get-started-btn">
+              <span><button onclick="showForm()">Book Your Free Consultation!!!</button></span>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+      <div class="extra">
+        <p>Our Achievement: Tracking Success in Numbers</p>
+        <div class="smbox">
+          <span>
+            <center>
+              <div class="data stat-count" id="happyClients" data-target="700">0</div>
+              <div class="det">Happy Clients</div>
+            </center>
+          </span>
+          <span>
+            <center>
+              <div class="data" id="partnerCountries">28</div>
+              <div class="det">Partner Countries</div>
+            </center>
+          </span>
+          <span>
+            <center>
+              <div class="data stat-count" id="partnerUniversities" data-target="800">0</div>
+              <div class="det">Partner Universities</div>
+            </center>
+          </span>
+        </div>
+      </div>
+      <section id="certification" class="certification-section">
+        <p class="section-subtitle">Recognized CCCIS Certification</p>
+        <h2 class="h2 section-title">Elevating Standards: Certified Excellence</h2>
+        <div class="certification-content">
+          <img src="assets/images/certificate.jpg" alt="CCCIS Certification">
+          <p>Discover our commitment to excellence through our prestigious CCCIS certification. This accreditation
+            underscores our dedication to delivering top-tier services to our clients. It stands as a testament to our
+            adherence to industry-leading standards, ensuring unmatched quality in every aspect of our consultancy
+            services.
+            Our journey to attaining the CCCIS certification involved rigorous training, comprehensive examinations,
+            and a demonstrated mastery of various facets of international education consultancy. This achievement
+            empowers us to guide students confidently towards their educational aspirations worldwide.</p>
+
+        </div>
+      </section>
+
+
+      
+
+
+
+
+      <!-- 
+        - #CATEGORY
+      -->
+
+      <section class="section sec category" id="countries" aria-label="category">
+        <div class="container">
+
+          <p class="section-subtitle">Discover Our Featured Glocaled Destinations</p>
+
+          <h2 class="h2 section-title">Explore</h2>
+          <div id="courseModal" class="modal">
+
+
+            <div class="card-container">
+              <a href="UK.html" class="card">
+                <img src="assets/images/ukimg.webp" alt="Country 1">
+                <div class="bottom">
+                  <img src="assets/images/uk.png" alt="Flag Country 1">
+                  <span>United Kingdom</span>
+                </div>
+              </a>
+              <a href="Ireland.html" class="card">
+                <img src="assets/images/ireimg.jpeg" alt="Country 1">
+                <div class="bottom">
+                  <img src="assets/images/ireland.png" alt="Flag Country 1">
+                  <span>Ireland</span>
+                </div>
+              </a>
+
+              <!-- Example card 2 -->
+              <a href="Australia.html" class="card">
+                <img src="assets/images/ausimg.avif" alt="Country 2">
+                <div class="bottom">
+                  <img src="assets/images/australia.png" alt="Flag Country 2">
+                  <span>Australia</span>
+                </div>
+              </a>
+              <a href="USA.html" class="card">
+                <img src="assets/images/usaimg.webp" alt="Country 1">
+                <div class="bottom">
+                  <img src="assets/images/USA.png" alt="Flag Country 1">
+                  <span>USA</span>
+                </div>
+              </a>
+              <a href="NewZealand.html" class="card">
+                <img src="assets/images/nzimg.jpg" alt="Country 1">
+                <div class="bottom">
+                  <img src="assets/images/NewZealand.png" alt="Flag Country 1">
+                  <span>NewZealand</span>
+                </div>
+              </a>
+              <a href="Canada.html" class="card">
+                <img src="assets/images/canadaimg.jpg" alt="Country 1">
+                <div class="bottom">
+                  <img src="assets/images/Canada.png" alt="Flag Country 1">
+                  <span>Canada</span>
+                </div>
+              </a>
+              <a href="Europe.html" class="card">
+                <img src="assets/images/europeimg.webp" alt="Country 1">
+                <div class="bottom">
+                  <img src="assets/images/Europe.png" alt="Flag Country 1">
+                  <span>Europe</span>
+                </div>
+              </a>
+              <a href="Singapore.html" class="card">
+                <img src="assets/images/singaporeimg.jpg" alt="Country 1">
+                <div class="bottom">
+                  <img src="assets/images/Singapore.png" alt="Flag Country 1">
+                  <span>Singapore</span>
+                </div>
+              </a>
+              <a href="Asia.html" class="card">
+                <img src="assets/images/asiaimg.jpeg" alt="Country 1">
+                <div class="bottom">
+                  <img src="assets/images/asia.png" alt="Flag Country 1">
+                  <span>Asia</span>
+                </div>
+              </a>
+            </div>
+      </section>
+      <section>
+
+      </section>
+
+      <section id="about" class="section about" aria-label="about">
+        <div class="container">
+
+          <figure class="about-banner">
+
+            <img src="./assets/images/about-banner.jpg" width="200" height="300" loading="lazy" alt="about banner"
+              class="w-100 about-img">
+
+          </figure>
+
+          <div class="about-content">
+
+            <p class="section-subtitle">Empowering Glocaled Education</p>
+
+            <h2 class="h2 section-title">Personalized Consultancy</h2>
+
+            <ul class="about-list">
+              <li class="about-item">
+
+                <div class="item-icon item-icon-1">
+                  <img src="./assets/images/us.jpeg" width="30" height="30" loading="lazy" aria-hidden="true">
+                </div>
+
+                <div>
+                  <h3 class="h3 item-title">University Shortlisting</h3>
+                </div>
+
+              </li>
+
+
+              <li class="about-item">
+
+                <div class="item-icon item-icon-1">
+                  <img src="./assets/images/about-icon-1.png" width="30" height="30" loading="lazy" aria-hidden="true">
+                </div>
+
+                <div>
+                  <h3 class="h3 item-title">Application Assistance</h3>
+                </div>
+
+              </li>
+              <li class="about-item">
+
+                <div class="item-icon item-icon-1">
+                  <img src="./assets/images/scholarship.png" width="30" height="30" loading="lazy" aria-hidden="true">
+                </div>
+
+                <div>
+                  <h3 class="h3 item-title">Scholarship Information</h3>
+                </div>
+
+              </li>
+              <li class="about-item">
+
+                <div class="item-icon item-icon-2">
+                  <img src="./assets/images/alumni.webp" width="30" height="30" loading="lazy" aria-hidden="true">
+                </div>
+
+                <div>
+                  <h3 class="h3 item-title">Alumni Connect</h3>
+                </div>
+
+              </li>
+
+
+              <li class="about-item">
+
+                <div class="item-icon item-icon-2">
+                  <img src="./assets/images/about-icon-2.png" width="30" height="30" loading="lazy" aria-hidden="true">
+                </div>
+
+                <div>
+                  <h3 class="h3 item-title">Visa Support</h3>
+                </div>
+
+              </li>
+
+              <li class="about-item">
+
+                <div class="item-icon item-icon-3">
+                  <img src="./assets/images/about-icon-3.png" width="30" height="30" loading="lazy" aria-hidden="true">
+                </div>
+
+                <div>
+                  <h3 class="h3 item-title">Accommodation</h3>
+                </div>
+
+              </li>
+              <li class="about-item">
+
+                <div class="item-icon item-icon-3">
+                  <img src="./assets/images/ielts.png" width="30" height="30" loading="lazy" aria-hidden="true">
+                </div>
+
+                <div>
+                  <h3 class="h3 item-title">IELTS/PTE/TOEFL/DUOLINGO Coaching</h3>
+
+                </div>
+
+              </li>
+              <li class="about-item">
+
+                <div class="item-icon item-icon-3">
+                  <img src="./assets/images/gre.webp" width="30" height="30" loading="lazy" aria-hidden="true">
+                </div>
+
+                <div>
+                  <h3 class="h3 item-title">GRE/GMAT, GERMAN Language Classes</h3>
+
+
+                  </p>
+                </div>
+
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+      </section>
+      <div class="diffSection" id="portfolio_section">
+      </div>
+      
+
+
+
+
+
+
+      <!-- 
+        - #COURSE
+      -->
+
+      <section class="section course" id="courses" aria-label="course"
+        style="background-image: url('./assets/images/course-bg.jpg')">
+        <div class="container">
+
+          <p class="section-subtitle">Why us?</p>
+
+          <h2 class="h2 section-title">We are different</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <h1>50,000 OFF ON FLIGHT TICKETS !!!</h1>
+              <div class="course-card">
+
+
+                <figure class="card-banner">
+                  <img src="./assets/images/course-1.avif" width="370" height="270" loading="lazy"
+                    alt="Competitive Strategy law for all students" class="img-cover">
+                </figure>
+
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <p class="card-title">Embark on a global academic journey with GlocalEd's Student
+                      Flight Grant Program, unlocking extraordinary opportunities with up to &#8377;50,000 off on flight
+                      tickets. Our exclusive airline partnerships make international education more accessible than
+                      ever. Apply now for flexible, cost-effective, and enriching travel opportunities tailored for
+                      students pursuing knowledge across borders.</p>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <h1>ALUMNI MEETS !!!</h1>
+              <div class="course-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/course-2.jpg" width="370" height="270" loading="lazy"
+                    alt="Machine Learning A-Z: Hands-On Python and java" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <p href="#" class="card-title">Elevate your institution's legacy with our Alumni Engagement Service.
+                      We orchestrate impactful alumni meets, providing students with insights, mentorship, and
+                      networking opportunities. Choose an experience that goes beyond the ordinary,
+                      fostering lasting connections and inspiring the professional journeys of your students. <br><br>
+                    </p>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <h1>LOAN SERVICES!!!</h1>
+              <div class="course-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/course-3.jpg" width="370" height="270" loading="lazy"
+                    alt="Achieving Advanced in Insights with Big" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <p href="#" class="card-title">Unlock financial possibilities with our loan services, backed by
+                      strategic partnerships with multiple banks. We streamline the process, providing competitive rates
+                      and personalized solutions tailored to your needs. Trust us to navigate your financial journey
+                      efficiently and securely. <br><br><br><br></p>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+
+
+          </ul>
+
+        </div>
+      </section>
+      <section id="cofounder" class="section event" aria-label="event">
+        <div class="container">
+
+          <p class="section-subtitle">Co Founders</p>
+
+          <h2 class="h2 section-title">Top Management</h2>
+          <div class="main">
+            <div class="c">
+              <div class="card-inner">
+                <div class="front">
+                  <img src="assets/images/cofounder1.jpg" alt="CEO Image">
+                  <h2>Chandan Shaksham Pandey</h2>
+                  <p>Founder & CEO</p>
+                  <a href="#csp" class="links" onclick="showDetails(1)">Read More</a>
+                </div>
+                <div id="csp" class="back">
+                  <!-- <span class="close-btn" onclick="closeDetails(1)">X</span> -->
+                  <!-- <h2>CEO Details</h2> -->
+                  <p>Meet our CEO, Chandan, a proud graduate from London. Since 2018, he has passionately guided
+                    students towards international success. His visionary leadership propels our overseas consultancy,
+                    empowering individuals to excel globally. Join us in shaping futures under Chandan's seasoned
+                    guidance, where expertise meets personalized mentorship for a transformative educational journey.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="c">
+              <div class="card-inner">
+                <div class="front">
+                  <img src="assets/images/cofounder2.jpg" alt="COO Image">
+                  <h2>Tamojeet Pandit</h2><br><br>
+                  <p>Co-founder & COO</p>
+                  <a href="#tp" class="links" onclick="showDetails(2)">Read More</a>
+                </div>
+                <div id="tp" class="back">
+                  <!-- <span class="close-btn" onclick="closeDetails(2)">X</span> -->
+                  <!-- <h2>COO Details</h2> -->
+                  <p>Introducing our COO, Tamojeet, a distinguished graduate from London. With a strategic mindset
+                    and international expertise, Tamojeet plays a pivotal role in driving our consultancy's success.
+                    His commitment to operational excellence ensures seamless global opportunities for our clients. Join
+                    us on a journey led by Tamojeet towards transformative educational experiences.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="std">
+            <p id="testimonial" class="section-subtitle">Testimonials</p>
+
+            <h2 class="h2 section-title">Join Our Community</h2>
+            <div class="test">
+              <div class="c">
+                <div class="card-inner">
+                  <div class="front">
+                    <img src="assets/images/t1.jpg" alt="CEO Image">
+                    <h2>- Zohra Huma Naafiah</h2>
+                    <p>Coventry University</p>
+                    <a href="#zhm" class="links" onclick="showDetails(1)">Read More</a>
+                  </div>
+                  <div id="zhn" class="back">
+                    <!-- <span class="close-btn" onclick="closeDetails(1)">X</span> -->
+                    <!-- <h2>CEO Details</h2> -->
+                    <p>"Exceptional service! The team guided me seamlessly through the entire application process. Their
+                      expertise, professionalism, and personalized attention made my journey towards studying abroad
+                      smooth
+                      and stress-free. Highly recommend!"</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="c" onclick="flipCard(this)">
+                <div class="card-inner" id="card">
+                  <div class="front">
+                    <img src="assets/images/t2.jpg" alt="COO Image">
+                    <h2>Aringa J Lully</h2><br><br>
+                    <p>Ulster University</p>
+                    <a href="#ajl" class="links" onclick="showDetails(1)">Read More</a>
+                  </div>
+                  <div id="ajl" class="back">
+                    <!-- <button onclick="closeCard()">Close</button> -->
+                    <p>"I am grateful for the invaluable support I received from the consultancy. They not only helped
+                      me
+                      choose the right university and course but also assisted with the visa application process. The
+                      team's
+                      commitment to excellence truly sets them apart."</p>
+                  </div>
+                </div>
+              </div>
+              <div class="c">
+                <div class="card-inner">
+                  <div class="front">
+                    <img src="assets/images/t4.jpg" alt="CEO Image">
+                    <h2>- Sailukumar Kasireddy</h2>
+                    <p>Northumbria University</p>
+                    <a href="#sk" class="links" onclick="showDetails(1)">Read More</a>
+                  </div>
+                  <div id="sk" class="back">
+                    <!-- <span class="close-btn" onclick="closeDetails(1)">X</span> -->
+                    <!-- <h2>CEO Details</h2> -->
+                    <p>"Five stars for the consultancy! From comprehensive advice on selecting the ideal destination to
+                      assistance with documentation and interviews, they were instrumental in making my dream of
+                      studying
+                      abroad a reality. A dedicated and reliable team that genuinely cares about your success"</p>
+                  </div>
+                </div>
+              </div>
+              <div class="c">
+                <div class="card-inner">
+                  <div class="front">
+                    <img src="assets/images/t3.jpg" alt="CEO Image">
+                    <h2>- Syed Haider</h2>
+                    <p>Queen Mary University of London</p>
+                    <a href="#sh" class="links" onclick="showDetails(1)">Read More</a>
+                  </div>
+                  <div id="sh" class="back">
+                    <!-- <span class="close-btn" onclick="closeDetails(1)">X</span> -->
+                    <!-- <h2>CEO Details</h2> -->
+                    <p>""Outstanding service! The consultants were knowledgeable, approachable, and always ready to
+                      address
+                      my concerns. Their expertise in navigating the complexities of international admissions and visas
+                      gave
+                      me the confidence to pursue my education abroad. Thank you for the exceptional guidance!""</p>
+                  </div>
+                </div>
+              </div>
+              <div class="c">
+                <div class="card-inner">
+                  <div class="front">
+                    <img src="assets/images/t5.jpg" alt="CEO Image">
+                    <h2>- Uddesh Mulik</h2>
+                    <p>Coventry University</p>
+                    <a href="#um" class="links">Read More</a>
+                  </div>
+                  <div id="um" class="back">
+                    <!-- <span class="close-btn" onclick="closeDetails(1)">X</span> -->
+                    <!-- <h2>CEO Details</h2> -->
+                    <p>"I had an excellent experience with the overseas consultancy. The team's proactive approach,
+                      timely
+                      responses, and thorough assistance in every aspect of the application process exceeded my
+                      expectations. Grateful for their unwavering support on my journey to studying overseas."</p>
+                  </div>
+                </div>
+              </div>
+              <div class="c">
+                <div class="card-inner">
+                  <div class="front">
+                    <img src="assets/images/t6.jpg" alt="CEO Image">
+                    <h2>- Deepak Varun Kumar</h2>
+                    <p>University of Strathclyde</p>
+                    <a href="#dvk" class="links">Read More</a>
+                  </div>
+                  <div id="dvk" class="back">
+                    <!-- <span class="close-btn" onclick="closeDetails(1)">X</span> -->
+                    <!-- <h2>CEO Details</h2> -->
+                    <p>"I had a fantastic experience with this overseas consultancy. Their proactive approach, timely
+                      responses, and thorough assistance throughout the application process exceeded my expectations.
+                      I'm grateful for their unwavering support on my journey to studying overseas, making the entire
+                      process smooth and successful."</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+      <section id="footer">
+        <footer>
+
+          <div class="footer-bottom">
+            <p class="section-subtitle">Contact us</p>
+            <ul class="contact-icons">
+              <li><a href="https://www.instagram.com/glocaled" target="_blank"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="mailto:edglocal2327@gmail.com"><i class="far fa-envelope"></i></a></li>
+              <li><a href="tel:+91 8867760146"><i class="fas fa-phone"></i></a></li>
+            </ul>
+            <p class="copyright">
+              <br>
+              <br>
+
+              Copyright &#169 2023 GlocalEd. All Rights Reserved by <a href="#" class="copyright-link">GlocalEd</a> |
+              <a href="https://www.termsfeed.com/live/6fa3479b-f680-44fe-a3d2-c2e49deead2e">Privacy Policy</a>
+            </p>
+          </div>
+
+          </div>
+        </footer>
+      </section>
+      <a href="https://wa.me/8867760146" target="_blank" rel="noopener noreferrer" class="whatsapp-icon">
+        <img src="assets/images/whatsapp.png" alt="WhatsApp Icon" width="50" height="50">
+        <!-- Alternatively, you can use text: "Chat on WhatsApp" -->
+      </a>
+
+
+
+
+
+      <!-- 
+    - #BACK TO TOP
+  -->
+
+      <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
+        <ion-icon name="arrow-up"></ion-icon>
+      </a>
+
+
+
+
+
+      <!-- 
+    - custom js link
+  -->
+
+      <script src="./assets/js/script.js" defer></script>
+
+      <!-- 
+    - ionicon link
+  -->
+      <script>
+         function showForm() {
+    document.querySelector('.modal-content').style.display = "none";
+    document.getElementById("formSection").style.display = "block";
+}
+        // function countUp(elementId, targetNumber) {
+        //   let count = 0;
+        //   const element = document.getElementById(elementId);
+
+        //   function updateCount() {
+        //     if (count <= targetNumber) {
+        //       element.textContent = count++;
+        //       requestAnimationFrame(updateCount);
+        //     } else {
+        //       element.textContent = targetNumber + '+';
+        //     }
+        //   }
+
+        //   updateCount();
+        // }
+
+        // // Detect when the section comes into view
+        // function isElementInViewport(el) {
+        //   const rect = el.getBoundingClientRect();
+        //   return (
+        //     rect.top >= 0 &&
+        //     rect.left >= 0 &&
+        //     rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        //     rect.right <= (window.innerWidth || document.documentElement.clientWidth) &&
+        //     rect.bottom > 0
+        //   );
+        // }
+
+
+        // const observer = new IntersectionObserver((entries, observer) => {
+        //   entries.forEach((entry) => {
+        //     if (entry.isIntersecting) {
+        //       countUp('happyClients', 700);
+        //       countUp('partnerUniversities', 800);
+        //       observer.disconnect();
+        //     }
+        //   });
+        // });
+
+        // observer.observe(document.querySelector('.extra'));
+        document.addEventListener('DOMContentLoaded', function () {
+          const options = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.5 // Adjust the threshold as needed
+          };
+
+          const observer = new IntersectionObserver(handleIntersection, options);
+
+          const elementsToAnimate = document.querySelectorAll('.stat-count');
+
+          elementsToAnimate.forEach(element => {
+            observer.observe(element);
+          });
+
+          function handleIntersection(entries) {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                const targetValue = parseInt(entry.target.dataset.target, 10) || 0;
+                animateCounter(entry.target, targetValue);
+                observer.unobserve(entry.target);
+              }
+            });
+          }
+
+          function animateCounter(element, targetValue) {
+            let currentValue = 0;
+
+            function updateCounter() {
+              if (currentValue < targetValue) {
+                currentValue += Math.ceil(targetValue / 100); // Adjust the increment based on your preference
+                element.innerText = currentValue;
+                requestAnimationFrame(updateCounter);
+              } else {
+                element.innerText = targetValue + '+';
+              }
+            }
+
+            updateCounter();
+          }
+        });
+
+        window.onload = function () {
+          showModal();
+        };
+
+        function showModal() {
+          document.getElementById('myModal').style.display = 'block';
+          document.body.style.overflow = 'hidden'; // Disable scrolling on the body
+        }
+
+        function closeModal() {
+          document.getElementById('myModal').style.display = 'none';
+          document.body.style.overflow = 'auto'; // Re-enable scrolling on the body
+        }
+
+        function myUKFunction() {
+          document.getElementById("myUKDropdown").classList.toggle("show");
+        }
+        
+        function showForm() {
+    document.querySelector('.modal-content').style.display = "none";
+    document.getElementById("formSection").style.display = "block";
+}
+
+function closeForm() {
+    document.getElementById("formSection").style.display = "none";
+    document.querySelector('.modal-content').style.display = "block";
+}
+
+
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        function myAusFunction() {
+          document.getElementById("myAusDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        function myUSFunction() {
+          document.getElementById("myUSDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        function myNZFunction() {
+          document.getElementById("myNZDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        function myCanFunction() {
+          document.getElementById("myCanDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        function myEurFunction() {
+          document.getElementById("myEurDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        function mySingFunction() {
+          document.getElementById("mySingDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        let currentTestimonial = 1;
+
+        function showTestimonial(index) {
+          document.querySelector(`#testimonial${currentTestimonial}`).classList.remove('active');
+          currentTestimonial = index;
+          document.querySelector(`#testimonial${currentTestimonial}`).classList.add('active');
+        }
+        function showDetails(cardNumber) {
+          document.querySelector('.card:nth-child(' + cardNumber + ') .back').style.transform = 'rotateY(0deg)';
+        }
+
+        function closeDetails(cardNumber) {
+          document.querySelector('.card:nth-child(' + cardNumber + ') .back').style.transform = 'rotateY(180deg)';
+        }
+      </script>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
