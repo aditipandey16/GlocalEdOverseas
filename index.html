@@ -165,19 +165,23 @@
     .iconmn {
       display: flex;
       align-items: center;
-      justify-content: center;
-      width: fit-content;
+      width: 25rem;
       height: 5rem;
     }
+    .iconmn img{
+      width: 15rem;
+      align-items: left;
+    }
 
-    .logo {
+    /* .logo {
+      border: 2px solid;
       font-size: 1rem;
       display: flex;
       align-items: center;
       text-decoration: none;
       color: #000;
       /* Specify the color you want for the text */
-    }
+     */
 
     .logo img {
       margin-right: -307px;
@@ -459,6 +463,10 @@
   display: inline-block;
   color: #0b0b0b;
 }
+.important{
+  font-weight: bold;
+  font-size:larger;
+}
 
 
 /* .checkbox-label input[type="checkbox"] {
@@ -498,7 +506,7 @@ input #agreeTerms{
         <div>
             <span class="close" onclick="closeModal()">&times;</span>
         </div>
-        <img src="assets/images/modal.jpg" alt="pop">
+        <img src="assets/images/modal.png" alt="pop">
         <h2>Check out our Instagram!</h2>
         <p>Follow us on Instagram: 
             <a href="https://www.instagram.com/glocaled/" target="_blank" class="instagram-link">
@@ -554,7 +562,7 @@ input #agreeTerms{
 
       <!-- <h1> -->
         <div class="iconmn">
-          <a href="#" class="logo company"><img src="assets/images/Main.png" alt=""></a>
+          <a href="#"><img src="assets/images/Main.png" alt=""></a>
         </div>
       <!-- </h1> -->
 
@@ -671,7 +679,8 @@ input #agreeTerms{
             <p class="hero-text">
               Embark on a transformative journey with our premier consultancy specializing in international education.
               Discover boundless opportunities at renowned global universities. Let our seasoned experts tailor a
-              personalized roadmap to your academic success. Start your adventure today!
+              personalized roadmap to your academic success. Start your adventure today! 
+              <div class="important">Also get scholarships upto 10 Lakh Rupees and off upto 50,000 rupees on flight expenses!!!</div>
             </p>
             <div class="get-started-btn">
               <span><button onclick="showForm()">Book Your Free Consultation!!!</button></span>
