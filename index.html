@@ -304,7 +304,7 @@
 }
 
 #formSection form label {
-    display: block;
+    /* display: block; */
     /* margin-bottom: 10px; */
     font-weight: bold;
 }
@@ -373,6 +373,105 @@
 .get-started-btn button:hover {
     background-color: #0056b3;
 }
+.form {
+ padding: 0%;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control input {
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-family: 'Poppins';
+  border-color:lightgrey;
+  border-style: solid;
+  font-weight: bold;
+}
+
+
+.form-control input:focus {
+  outline: 0;
+  border-color: #111010;
+  color: #111010;
+ 
+}
+
+.form-control input:focus::placeholder {
+  color: transparent;
+}
+.form-control.success input {
+  border-color: var(--success-color);
+}
+
+.form-control.error input {
+  border-color: var(--error-color);
+  background-image: url(./alert.png);
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  background-size: 30px;
+  color: var(--error-color);
+}
+
+.form-control small {
+  color: var(--error-color);
+  position: absolute;
+  font-size: 10px;
+  right:0;
+  bottom: 0;
+  visibility: hidden;
+  
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+.form button {
+  background-color: #04AA6D;
+    border: none;
+    color: var(--white);
+    width: 100%;
+    padding: 12px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-family: 'Poppins';
+}
+.checkbox-label {
+    display: flex; /* or display: flex; */
+    width: 100%;
+    /* border: 5px solid red; */
+    justify-content:start;
+    align-items: center;
+    gap:10px;
+    
+}
+/* .checkbox-label-innerbox{
+  border:2px solid green;
+
+} */
+.checkbox-label-innerbox a{
+  display: inline-block;
+  color: #0b0b0b;
+}
+
+
+/* .checkbox-label input[type="checkbox"] {
+    margin-right: 5px;
+}
+.checkbox-label a{
+  display: inline-block;
+  color: #01281a;
+}
+input #agreeTerms{
+  display: flex !important;
+} */
+
 
   </style>
 
@@ -414,35 +513,37 @@
 </div>
 <div id="formSection" style="display:none;">
   <h2>Book your Slot now!!!</h2> 
-  <form id="signupForm">
+  <form id="signupForm form">
       <!-- <span class="close" onclick="closeForm()">&times;</span> -->
-      <label for="firstName">First Name:</label>
-      <input type="text" id="firstName" name="firstName" required><br><br>
-      
-      <label for="lastName">Last Name:</label>
-      <input type="text" id="lastName" name="lastName" required><br><br>
-      
-      <label for="mobileNumber">Mobile Number:</label>
-      <input type="text" id="mobileNumber" name="mobileNumber" required><br><br>
-      
-      <label for="email">Email ID:</label>
-      <input type="email" id="email" name="email" required><br><br>
-      
-      <label for="country">Country:</label>
-      <select id="country" name="country">
-          <option value="UK">UK</option>
-          <option value="Ireland">Ireland</option>
-          <option value="Australia">Australia</option>
-          <option value="USA">USA</option>
-          <option value="NewZealand">NewZealand</option>
-          <option value="Canada">Canada</option>
-          <option value="Europe">Europe</option>
-          <option value="Singapore">Singapore</option>
-          <option value="Asia">Asia</option>
-          <!-- Add more options as needed -->
-      </select><br><br>
-      
+      <div class="form-control">
+        <input type="text" id="firstname" placeholder="Name *" required />
+        
+      </div>
+      <!-- <div class="form-control">
+        <input type="text" id="lastname" placeholder="Last Name"  />
+        <small>Error message</small>
+      </div> -->
+      <div class="form-control">
+        <input type="tel" id="Mobile" name="phone" pattern="[0-9]{10}" placeholder="Mobile Number *"  required/>
+        
+      </div>
+      <div class="form-control">
+        <input type="email" id="email" placeholder="Email *" required  />
+        
+      </div>
+      <!-- <div class="form-control">
+        <input type="password" id="password" placeholder="Password *"/>
+        <small>Error message</small>
+      </div> -->
+
+     <div class="checkbox-label" for="agreeTerms">
+      <div class="checkbox-label-innerbox"><input type="checkbox" id="agreeTerms" name="agreeTerms" required></div>
+    <div class="checkbox-label-innerbox"> I agree to the <a href="https://www.termsfeed.com/live/6fa3479b-f680-44fe-a3d2-c2e49deead2e" target="_blank">Terms and Conditions</a></div>
+     </div>
+
+
       <input type="submit" value="Submit">
+      
   </form>
 </div>
 
@@ -1454,6 +1555,7 @@ function closeForm() {
         function closeDetails(cardNumber) {
           document.querySelector('.card:nth-child(' + cardNumber + ') .back').style.transform = 'rotateY(180deg)';
         }
+        
       </script>
       <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
       <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
