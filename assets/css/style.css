@@ -857,7 +857,7 @@ font-family: 'Open Sans', sans-serif;
 
 .event :is(.section-subtitle, .section-title) { text-align: center; }
 
-.event .section-title { margin-block-end: 60px; }
+.event .section-title { margin-block-end: 30px; }
 
 .event-card {
   position: relative;
@@ -924,8 +924,7 @@ font-family: 'Open Sans', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin: 0;
+  margin-bottom: 60px;
   background-color: hsl(215, 52%, 82%);
 }
 
@@ -996,7 +995,6 @@ font-family: 'Open Sans', sans-serif;
 }
 @media (max-width: 600px) {
   .main {
-    height: 1000px;
     flex-direction: column;
   }
 
