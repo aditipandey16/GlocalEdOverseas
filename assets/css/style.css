@@ -378,6 +378,10 @@ body {
   margin-block-end: 30px;
 }
 
+.important {
+  margin-bottom: 30px;
+}
+
 .hero-banner {
   max-width: max-content;
   margin-inline: auto;

@@ -53,7 +53,7 @@
       }
     }
 
-    #myModal {
+    #myModal, #user-form {
       display: none;
       position: fixed;
       top: 0;
@@ -74,19 +74,55 @@
       padding: 20px;
       border-radius: 10px;
       text-align: center;
+      max-width: 95%;
+      width: 490px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+
+      > h2 {
+        line-height: 1;
+        margin-top: 20px;
+      }
     }
 
     .close {
-      color: #0b0b0b;
-      float: right;
-      font-size: 40px;
-      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #4d4d4d;
       cursor: pointer;
+      margin-bottom: 10px;
+      position: absolute;
+      top: -50px;
+      right: 0;
+      border-radius: 50%;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      width: 40px;
+      height: 40px;
+      background-color: #fff;
+      transition: all 0.3s ease;
+      opacity: 0.5;
+
+      > span {
+        font-size: 36px;
+        line-height: 40px;
+        margin-top: -4px;
+      }
+
+      &:hover {
+        transform: scale(1.2);
+        opacity: 1;
+      }
     }
 
     .instagram-link {
-      color: blue !important;
-      /* Change the color to blue */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: blue;
+      
+      > i {
+        margin-right: 6px;
+      }
     }
 
     @keyframes scaleUp {
@@ -110,24 +146,11 @@
     }
 
     .modal-content img {
-      width: 45rem;
-      height: 45rem;
-      /* Make the image take 100% of the modal width */
-      /* Maintain the aspect ratio */
-    }
-
-    @media (max-width: 600px) {
-      .modal-content {
-        max-width: 90%;
-        text-align: center;
-      }
-
-      .modal-content img {
-        width: 300px;
-        height: 300px;
-        /* Make the image take 100% of the modal width */
-        /* Maintain the aspect ratio */
-      }
+      width: 100%;
+      max-width: 45rem;
+      max-height: 45rem;
+      margin-bottom: 20px;
+      border-radius: 4px;  
     }
 
     .header .container .company {
@@ -304,7 +327,7 @@
       max-width: 80%;
       max-height: 80vh;
       /* Set maximum height */
-      overflow-y: auto;
+      /* overflow-y: auto; */
       /* Enable vertical scrolling */
     }
 
@@ -358,15 +381,6 @@
       #formSection {
         width: 80%;
       }
-
-    }
-
-    ;
-
-
-    /* Add this CSS to position the "Get Started" button */
-    .instagram-link {
-      display: inline-block;
     }
 
     .instagram-link button {
@@ -451,9 +465,9 @@
       padding: 0%;
     }
 
-    .form-control {
+  .form-control {
     position: relative;
-    margin: 40px;
+    margin: 40px 0;
   }
 
   .form-control label {
@@ -519,7 +533,6 @@
     color: rgb(4, 4, 110);
   }
   .select-box {
-      width: 73%;
       padding: 10px;
       margin-bottom: 40px;
       border: 1px solid #ccc;
@@ -714,74 +727,85 @@ input.search-box {
   <div id="myModal">
     <div class="modal-content">
       <div>
-        <span class="close" onclick="closeModal()">&times;</span>
+        <button class="close" onclick="closeModal()">
+          <span>&times;</span>
+        </button>
       </div>
       <img src="assets/images/modal.png" alt="pop">
-      <h2>Check out our Instagram!</h2>
-      <p>Follow us on Instagram:
-        <a href="https://www.instagram.com/glocaled/" target="_blank" class="instagram-link">
-          <i class="fab fa-instagram"></i>glocalEd
-        </a>
       <div class="get-started-btn">
         <span><button onclick="showForm()">Book Your Free Consultation!!!</button></span>
       </div>
+      <h2>Check out our Instagram!</h2>
+      <p>Follow us on Instagram:
+        <a href="https://www.instagram.com/glocaled/" target="_blank" class="instagram-link">
+          <i class="fab fa-instagram"></i>
+          <span>glocaled</span>
+        </a>
       </p>
     </div>
 
   </div>
-  <div id="formSection" style="display:none;">
-    <h2>Book your Slot now!!!</h2>
-    
-    <form id="signupForm form" class="form">
-      <div class="form-control">
-        <input type="text" id="name" placeholder="Name *" data-placeholder="Name *" required />
-        <label for="name">Name *</label>
+  <div id="user-form">
+    <div id="formSection">
+      <div>
+        <button class="close" onclick="closeForm()">
+          <span>&times;</span>
+        </button>
       </div>
-    
-      <!-- <div class="form-control">
-        <input type="tel" id="Mobile" name="phone" pattern="(6|7|8|9)\d{9}" placeholder="Mobile Number *" data-placeholder="Mobile Number *" required />
-        <label for="Mobile">Mobile Number *</label>
-      </div> -->
-      <div class="select-box form-control">
-        <div class="selected-option">
-            <div>
-                <span class="iconify" data-icon="flag:gb-4x3"></span>
-                <!-- <strong>+44</strong> -->
-            </div>
-            <input type="tel" id="Mobile" name="phone" placeholder="Mobile Number *" required>
-            <label for="Mobile">Mobile Number *</label>
+
+      <h2>Book your Slot now!!!</h2>
+      
+      <form id="signupForm form" class="form">
+        <div class="form-control">
+          <input type="text" id="name" placeholder="Name *" data-placeholder="Name *" required />
+          <label for="name">Name *</label>
         </div>
-        <div class="options">
-            <input type="text" class="search-box" placeholder="Search Country Name">
-            
-            <ol>
-                <!-- List items with both flag and country name -->
-                <li class="option" data-phone="+44">
-                    <div>
-                        <span class="iconify" data-icon="flag:gb-4x3"></span>
-                        <span class="country-name">United Kingdom</span>
-                    </div>
-                </li>
-                <!-- Repeat for other countries -->
-            </ol>
+      
+        <!-- <div class="form-control">
+          <input type="tel" id="Mobile" name="phone" pattern="(6|7|8|9)\d{9}" placeholder="Mobile Number *" data-placeholder="Mobile Number *" required />
+          <label for="Mobile">Mobile Number *</label>
+        </div> -->
+        <div class="select-box form-control">
+          <div class="selected-option">
+              <div>
+                  <span class="iconify" data-icon="flag:gb-4x3"></span>
+                  <!-- <strong>+44</strong> -->
+              </div>
+              <input type="tel" id="Mobile" name="phone" placeholder="Mobile Number *" required>
+              <label for="Mobile">Mobile Number *</label>
+          </div>
+          <div class="options">
+              <input type="text" class="search-box" placeholder="Search Country Name">
+              
+              <ol>
+                  <!-- List items with both flag and country name -->
+                  <li class="option" data-phone="+44">
+                      <div>
+                          <span class="iconify" data-icon="flag:gb-4x3"></span>
+                          <span class="country-name">United Kingdom</span>
+                      </div>
+                  </li>
+                  <!-- Repeat for other countries -->
+              </ol>
+          </div>
+      </div>
+      
+        <div class="form-control">
+          <input type="email" id="email" placeholder="Email *" data-placeholder="Email *" required />
+          <label for="email">Email *</label>
         </div>
+      
+        <div class="checkbox-label" for="agreeTerms">
+          <div class="checkbox-label-innerbox">
+            <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+          </div>
+          <div class="checkbox-label-innerbox"> I agree to GlocalEd's <a href="https://www.termsfeed.com/live/6fa3479b-f680-44fe-a3d2-c2e49deead2e" target="_blank">Privacy Policies</a></div>
+        </div>
+      
+        <input type="submit" value="Submit">
+      </form>
+      
     </div>
-    
-      <div class="form-control">
-        <input type="email" id="email" placeholder="Email *" data-placeholder="Email *" required />
-        <label for="email">Email *</label>
-      </div>
-    
-      <div class="checkbox-label" for="agreeTerms">
-        <div class="checkbox-label-innerbox">
-          <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
-        </div>
-        <div class="checkbox-label-innerbox"> I agree to GlocalEd's <a href="https://www.termsfeed.com/live/6fa3479b-f680-44fe-a3d2-c2e49deead2e" target="_blank">Privacy Policies</a></div>
-      </div>
-    
-      <input type="submit" value="Submit">
-    </form>
-    
   </div>
 
 
@@ -1549,10 +1573,10 @@ input.search-box {
     - ionicon link
   -->
       <script>
-        function showForm() {
-          document.querySelector('.modal-content').style.display = "none";
-          document.getElementById("formSection").style.display = "block";
-        }
+        // function showForm() {
+        //   document.querySelector('.modal-content').style.display = "none";
+        //   document.getElementById("formSection").style.display = "block";
+        // }
         
         document.addEventListener('DOMContentLoaded', function () {
           const options = {
@@ -1615,11 +1639,16 @@ input.search-box {
         }
 
         function showForm() {
+          closeModal();
+          document.getElementById('user-form').style.display = 'block';
+          document.body.style.overflow = 'hidden'; // Disable scrolling on the body
           document.querySelector('.modal-content').style.display = "none";
           document.getElementById("formSection").style.display = "block";
         }
 
         function closeForm() {
+          document.getElementById('user-form').style.display = 'none';
+          document.body.style.overflow = 'auto'; // Re-enable scrolling on the body
           document.getElementById("formSection").style.display = "none";
           document.querySelector('.modal-content').style.display = "block";
         }
