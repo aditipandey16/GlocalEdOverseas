@@ -311,7 +311,6 @@
     /* Styling for the form */
     /* Styling for the form */
     #formSection {
-      width: 50%;
       display: none;
       position: fixed;
       top: 50%;
@@ -323,7 +322,7 @@
       text-align: center;
       z-index: 1000;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-      min-width: 50%;
+      min-width: 30%;
       max-width: 80%;
       max-height: 80vh;
       /* Set maximum height */
@@ -693,6 +692,10 @@
     .important {
       justify-content: center;
     }
+    input#agreeTerms {
+    width: 169%;
+    height: auto;
+}
   </style>
 
 </head>
@@ -741,7 +744,7 @@
               <span class="iconify" data-icon="flag:in-4x3"></span>
               <span class="code"><strong>+91</strong></span>
             </div>
-            <input type="tel" id="Mobile" name="tel" pattern="(6|7|8|9)\d{9}" placeholder="Phone Number *" required />
+            <input type="tel" id="Mobile" name="tel" pattern="(6|7|8|9)\d{9}" placeholder="Mobile Number *" required />
             <label for="tel">Mobile Number *</label>
           </div>
         </div>
@@ -757,7 +760,7 @@
           </div>
           <div class="checkbox-label-innerbox"> I agree to GlocalEd's <a
               href="https://www.termsfeed.com/live/6fa3479b-f680-44fe-a3d2-c2e49deead2e" target="_blank">Privacy
-              Policies</a></div>
+              Policies</a></div> <br>
         </div>
 
         <input type="submit" value="Submit">
