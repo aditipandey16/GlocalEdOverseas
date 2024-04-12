@@ -375,11 +375,12 @@ body {
 .hero-text {
   font-size: var(--fs-5);
   font-weight: var(--fw-500);
-  margin-block-end: 30px;
+  /* margin-block-end: 30px; */
 }
 
 .important {
   margin-bottom: 30px;
+  font-weight: bold;
 }
 
 .hero-banner {
